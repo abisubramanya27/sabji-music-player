@@ -151,7 +151,6 @@ html {
 }
 
 body {
-  background-color: var(--black);
   color: var(--on-background);
   font-size: 1.6rem;
   line-height: 1.5;
@@ -290,6 +289,9 @@ body:hover::-webkit-scrollbar-thumb {
 \*-----------------------------------*/
 .main-layout {
   display: flex;
+  overflow: hidden;
+  width: 100%;
+  align-items: stretch;
 }
 
 .volume {
@@ -467,18 +469,20 @@ body:hover::-webkit-scrollbar-thumb {
 .playlist {
   position: fixed;
   top: 0;
-  right: -180px;
-  width: 180px;
+  right: 0px;
+  width: 160px;
   height: 100vh;
-  background-color: var(--background);
-  padding: 28px;
+  background-image: var(--gradient);
+  padding: 20px;
   border-top-left-radius: var(--radius-16);
   border-bottom-left-radius: var(--radius-16);
   box-shadow: var(--shadow-2);
-  overflow-y: overlay;
+  overflow-y: auto;
   visibility: hidden;
   transition: var(--transition-2);
   z-index: 4;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .playlist:hover::-webkit-scrollbar-thumb {
@@ -486,7 +490,7 @@ body:hover::-webkit-scrollbar-thumb {
 }
 
 .playlist.active {
-  transform: translateX(-180px);
+  transform: translateX(-60px);
   visibility: visible;
 }
 
@@ -700,11 +704,6 @@ body:hover::-webkit-scrollbar-thumb {
   /**
    * PLAYLIST
    */
-
-  .playlist {
-    padding: 32px;
-    width: 220px;
-  }
 
   .music-list {
     gap: 28px;

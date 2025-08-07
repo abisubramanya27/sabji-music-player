@@ -559,3 +559,25 @@ const muteVolume = function () {
 }
 
 playerVolumeBtn.addEventListener("click", muteVolume);
+
+/*
+Playlist height correction
+*/
+function syncSidebarHeight() {
+  const player = document.getElementById('musicPlayer');
+  const sidebar = document.getElementById('playlistSidebar');
+
+  if (player && sidebar) {
+    sidebar.style.height = `${player.offsetHeight}px`;
+  }
+}
+
+// Run on load
+window.addEventListener('load', syncSidebarHeight);
+
+// Run on resize (optional, in case layout shifts)
+window.addEventListener('resize', syncSidebarHeight);
+
+// Optional: Re-run when dynamic content changes (e.g., lyrics expand)
+const observer = new MutationObserver(syncSidebarHeight);
+observer.observe(document.getElementById('musicPlayer'), { childList: true, subtree: true });
