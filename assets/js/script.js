@@ -577,7 +577,3 @@ window.addEventListener('load', syncSidebarHeight);
 
 // Run on resize (optional, in case layout shifts)
 window.addEventListener('resize', syncSidebarHeight);
-
-// Optional: Re-run when dynamic content changes (e.g., lyrics expand)
-const observer = new MutationObserver(syncSidebarHeight);
-observer.observe(document.getElementById('musicPlayer'), { childList: true, subtree: true });
