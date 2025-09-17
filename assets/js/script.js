@@ -199,10 +199,10 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-21.PNG",
     posterUrl: "./assets/images/poster-21.PNG",
-    title: "Tum Ho Toh",
-    album: "Saiyaara",
+    title: "Vizhi Veekura",
+    album: "Think Indie",
     year: 2025,
-    artist: "Vishal Mishra, Hansika Pareek, Raj Shekhar",
+    artist: "Sai Abhyankar, Sai Smriti, Adesh Krishna",
     musicPath: "./assets/music/music-21.mp3",
   },
   {
