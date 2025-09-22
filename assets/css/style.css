@@ -350,13 +350,13 @@ body:hover::-webkit-scrollbar-thumb {
   /* Left-right fade effect */
   mask-image: linear-gradient(to right,
       rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.5) 10%,
-      rgba(0, 0, 0, 0.5) 90%,
+      rgba(0, 0, 0, 0.3) 10%,
+      rgba(0, 0, 0, 0.3) 90%,
       rgba(0, 0, 0, 0) 100%);
   -webkit-mask-image: linear-gradient(to right,
       rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.5) 10%,
-      rgba(0, 0, 0, 0.5) 90%,
+      rgba(0, 0, 0, 0.3) 10%,
+      rgba(0, 0, 0, 0.3) 90%,
       rgba(0, 0, 0, 0) 100%);
 }
 
