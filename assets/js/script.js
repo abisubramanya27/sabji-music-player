@@ -20,7 +20,7 @@ const musicData = [
     backgroundImage: "./assets/images/poster-2.PNG",
     posterUrl: "./assets/images/poster-2.PNG",
     title: "Jaanu Intro (Flute Theme)",
-    album: "96",
+    album: "96 The Film",
     year: 2018,
     artist: "Govind Vasantha",
     musicPath: "./assets/music/music-2.mp3",
